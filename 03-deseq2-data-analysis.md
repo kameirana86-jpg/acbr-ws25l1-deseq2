@@ -3,7 +3,7 @@
 conda activate r4.5
 ```
 # start R in r4.5
-```{cmd}
+```{CMD}
 R
 ```
 
@@ -44,4 +44,7 @@ names(files) <- samples$run
 
 # transcript to gene map
 tx2gene <- read_csv(file.path(dir, "tx2gene.gencode.v27.csv"))
+
+#loading salmon quant files
+txi <- tximport(files, type="salmon", tx2gene=tx2gene)
 ```
