@@ -14,3 +14,10 @@ using `install.package()` function in R base. Please type the following,
 ```{R}
 install.packages("BiocManager")
 ```
+
+Install `BiocManagers` Bioconductor package using `BiocManager::install()`
+```{R}
+BiocManager::install("Biostrings")
+```
+
+
