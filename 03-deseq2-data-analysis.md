@@ -83,6 +83,7 @@ res_de <- results(dds_de)
 # S4 object to data frame
 res_de_df <- data.frame(res_de)
 # conda install conda-forge::r-devtools
+# R environment activate by typing R and Entre
 # devtools::install_github("BioSenior/ggVolcano")
 
 # https://github.com/BioSenior/ggVolcano
