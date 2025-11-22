@@ -48,3 +48,16 @@ tx2gene <- read_csv(file.path(dir, "tx2gene.gencode.v27.csv"))
 #loading salmon quant files
 txi <- tximport(files, type="salmon", tx2gene=tx2gene)
 ```
+# DESeqDataSet object for Txi Object
+```{R}
+library("DESeq2")
+ddsTxi <- DESeqDataSetFromTximport(
+    txi,colData = samples,design = ~ condition
+)
+```
+# create coldata
+```{R}
+coldata <- samples
+
+```
+
