@@ -38,6 +38,8 @@ samples[,c("pop","center","run","condition")]
 # loading salmon quantified files (quant)
 ```{R}
 files <- file.path(dir,"salmon", samples$run, "quant.sf.gz")
+names(files) <- samples$run
 
+# transcript to gene map
+tx2gene <- read_csv(file.path(dir, "tx2gene.gencode.v27.csv"))
 ```
-
