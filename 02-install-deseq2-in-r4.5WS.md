@@ -3,7 +3,7 @@ To start R statistical Programming
 language type R in the command line of 
 the R4.5WS conda environment
 
-```{CMD}
+```{cmd}
 
 R
 ```
@@ -19,5 +19,11 @@ Install `BiocManagers` Bioconductor package using `BiocManager::install()`
 ```{R}
 BiocManager::install("Biostrings")
 ```
+
+
+
+
+
+
 
 
