@@ -102,4 +102,13 @@ ggvolcano(data_df,
     label = "row", label_number = 10, 
     output = FALSE)
 ```
+# Save pdf file for the generated volcano plot
+```{cmd}
+ dev.copy(pdf, "volcano_plot.pdf", width = 8, height = 6, useDingbats = FALSE)
+dev.off()
+```
+# Get working directory
+```{cmd}
+getwd()
+```
 
